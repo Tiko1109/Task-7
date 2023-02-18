@@ -1,0 +1,573 @@
+@font-face {
+    font-family:'Rufina-700';
+    src: url(../fonts/Rufina-700.ttf);
+}
+
+@font-face {
+    font-family:'RedRose-400';
+    src: url(../fonts/RedRose-400.ttf);
+}
+
+@font-face {
+    font-family:'RedRose-600';
+    src: url(../fonts/RedRose-600.ttf);
+}
+
+@font-face {
+    font-family:'RedHatDisplay-400';
+    src: url(../fonts/RedHatDisplay-400.ttf);
+}
+
+@font-face {
+    font-family:'RedHatDisplay-600';
+    src: url(../fonts/RedHatDisplay-600.ttf);
+}
+
+@font-face {
+    font-family:'RedHatDisplay-700';
+    src: url(../fonts/RedHatDisplay-700.ttf);
+}
+
+.header-container {
+    border: 1px solid #000000;
+    padding: 35px 68px 43px;
+    display: flex;
+    align-items: center;
+}
+
+.heading {
+    width: 401px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 255px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-family: 'Rufina-700';
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.heading a {
+    text-decoration: none;
+    font-family: 'RedRose-400';
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.heading a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    width: 322px;
+    height: 24px;
+    padding: 10px 0 10px 14px;
+    border: 1px solid #4B4B4B;
+    border-radius: 4px;
+    display: flex;
+    margin-left: 17%;
+}
+
+.search-bar input {
+    font-family: 'RedHatDisplay-400';
+    font-size: 10px;
+    line-height: 13px;
+    color: #969494;
+    border: none;
+    width: 85%;
+    margin-left: 10px;
+}
+
+.filters {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.filters ul {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters button {
+    font-family: 'RedHatDisplay-400';
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    width: 82px;
+    height: 34px;
+    border: 0.5px solid #EAEAEA;
+    border-radius: 10px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: #F1F1F1;
+}
+
+.home-container {
+    padding: 0 104px 119px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 64px;
+    row-gap: 86px;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-heading p {
+    font-family: 'RedHatDisplay-600';
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.color-card {
+    display: grid;
+    width: 260px;
+}
+
+.color1, .color2, .color3, .color4 {
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.color-info {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    opacity: 0.0;
+}
+
+.color-info p {
+    font-family: 'RedHatDisplay-600';
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.HEX {
+    width: 59px;
+    height: 16px;
+    padding: 2px 4px;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 0px 10px 0px 4px;
+    text-align: left;
+}
+
+.RGB {
+    width: 77px;
+    height: 16px;
+    padding: 3px 3px 1px 6px;
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 10px 0px 4px;
+    text-align: right;
+}
+
+.color1 {
+    background-color: #CDF0EA;
+}
+
+.color2 {
+    background-color: #F9F9F9;
+}
+
+.color3 {
+    background-color: #F6C6EA;
+}
+
+.color4 {
+    background-color: #FAF4B7;
+}
+
+.second.color1 {
+    background-color: #D4ECDD;;
+}
+
+.second.color2 {
+    background-color: #345B63;
+}
+
+.second.color3 {
+    background-color: #152D35;
+}
+
+.second.color4 {
+    background-color: #112031;
+}
+
+.third.color1 {
+    background-color: #F9F3DF;
+}
+
+.third.color2 {
+    background-color: #CDF2CA;
+}
+
+.third.color3 {
+    background-color: #FFDEFA;
+}
+
+.third.color4 {
+    background-color: #FFC898;
+}
+
+.fourth.color1 {
+    background-color: #3330E4;
+}
+
+.fourth.color2 {
+    background-color: #F637EC;
+}
+
+.fourth.color3 {
+    background-color: #FBB454;
+}
+
+.fourth.color4 {
+    background-color: #FAEA48;
+}
+
+.fifth.color1 {
+    background-color: #D9D7F1;
+}
+
+.fifth.color2 {
+    background-color: #FFFDDE;
+}
+
+.fifth.color3 {
+    background-color: #E7FBBE;
+}
+
+.fifth.color4 {
+    background-color: #FFCBCB;
+}
+
+.sixth.color1 {
+    background-color: #990000;
+}
+
+.sixth.color2 {
+    background-color: #FF5B00;
+}
+
+.sixth.color3 {
+    background-color: #D4D925;
+}
+
+.sixth.color4 {
+    background-color: #FFEE63;
+}
+
+.seventh.color1 {
+    background-color: #B91646;
+}
+
+.seventh.color2 {
+    background-color: #DFD8CA;
+}
+
+.seventh.color3 {
+    background-color: #FBF3E4;
+}
+
+.seventh.color4 {
+    background-color: #105652;
+}
+
+.nineth.color1 {
+    background-color: #FFCC1D;
+}
+
+.nineth.color2 {
+    background-color: #0B4619;
+}
+
+.nineth.color3 {
+    background-color: #116530;
+}
+
+.nineth.color4 {
+    background-color: #E8E8CC;
+}
+
+.tenth.color1 {
+    background-color: #00FFAB;
+}
+
+.tenth.color2 {
+    background-color: #14C38E;
+}
+
+.tenth.color3 {
+    background-color: #B8F1B0;
+}
+
+.tenth.color4 {
+    background-color: #E3FCBF;
+}
+
+.eleventh.color1 {
+    background-color: #49FF00;
+}
+
+.eleventh.color2 {
+    background-color: #FBFF00;
+}
+
+.eleventh.color3 {
+    background-color: #FF9300;
+}
+
+.eleventh.color4 {
+    background-color: #FF0000;
+}
+
+.last.color1 {
+    background-color: #06283D;
+}
+
+.last.color2 {
+    background-color: #1363DF;
+}
+
+.last.color3 {
+    background-color: #47B5FF;
+}
+
+.last.color4 {
+    background-color: #DFF6FF;
+}
+
+.color-info:hover {
+    opacity: 1.0;
+    transition: 0.2s linear;
+}
+
+.card-ending {
+    height: 19px;
+    border-radius: 4px;
+    border-bottom: 1px solid #EAEAEA;
+    border-left: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+    padding: 17px 20px 14px 25px;
+}
+
+.card-ending img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.heart-emoji {
+    margin-right: 125px;
+    cursor: pointer;
+}
+
+.chain-icon {
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.collection-container {
+    padding: 136px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+    row-gap: 87px;
+}
+
+.main-image {
+    width: 100%;
+    height: 283px;
+    background-image: url(../img/robert-katzki-image.png);
+    background-color: inherit;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-image h1 {
+    font-family: 'RedRose-600';
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.main-image.hover {
+    background-color: #9F9F9F;
+    transition: 0.2s linear;
+}
+
+.palette-card {
+    width: 346px;
+    height: 314px;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+}
+
+.palette-card img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.palette-card p {
+    font-family: 'RedHatDisplay-600';
+    font-size: 10px;
+    line-height: 13px;
+    color: #5A5A5A;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5 {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+}
+
+.image-palette-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.I.circle1 {
+    background-color: #D12529;
+}
+
+.I.circle2 {
+    background-color: #394430;
+}
+
+.I.circle3 {
+    background-color: #FC739F;
+}
+
+.I.circle4 {
+    background-color: #FA9F4A;
+}
+
+.I.circle5 {
+    background-color: #A13583;
+}
+
+.II.circle1 {
+    background-color: #FF8601;
+}
+
+.II.circle2 {
+    background-color: #F2EAE7;
+}
+
+.II.circle3 {
+    background-color: #430001;
+}
+
+.II.circle4 {
+    background-color: #15100F;
+}
+
+.II.circle5 {
+    background-color: #E59222;
+}
+
+.III.circle1 {
+    background-color: #7F73B5;
+}
+
+.III.circle2 {
+    background-color: #E2DFE6;
+}
+
+.III.circle3 {
+    background-color: #534090;
+}
+
+.III.circle4 {
+    background-color: #0E44A7;
+}
+
+.III.circle5 {
+    background-color: #050408;
+}
+
+.IV.circle1 {
+    background-color: #F6F6F8;
+}
+
+.IV.circle2 {
+    background-color: #FDCF05;
+}
+
+.IV.circle3 {
+    background-color: #49403E;
+}
+
+.IV.circle4 {
+    background-color: #E6D9C9;
+}
+
+.IV.circle5 {
+    background-color: #F9E822;
+}
+
+.V.circle1 {
+    background-color: #007CC2;
+}
+
+.V.circle2 {
+    background-color: #01A0D9;
+}
+
+.V.circle3 {
+    background-color: #DE9E00;
+}
+
+.V.circle4 {
+    background-color: #CDDD97;
+}
+
+.V.circle5 {
+    background-color: #DFD046;
+}
+
+.VI.circle1 {
+    background-color: #F5BCCF;
+}
+
+.VI.circle2 {
+    background-color: #E1D953;
+}
+
+.VI.circle3 {
+    background-color: #D09231;
+}
+
+.VI.circle4 {
+    background-color: #563E43;
+}
+
+.VI.circle5 {
+    background-color: #A9C12A;
+}
+
